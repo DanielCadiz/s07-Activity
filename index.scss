@@ -1,0 +1,116 @@
+@use  'defaults';
+
+$default-letter-space: 5px;
+$default-margin: 20px;
+
+%center-text {
+	text-align: center;
+}
+
+// Navbar
+nav {
+    background-color: white;
+    margin-bottom: $default-margin;
+}
+
+a:hover {
+    background-color: #b4d6de;
+}
+
+div {
+    display: inline-block;
+    float: right;
+}
+
+h1 {
+    margin-bottom: $default-margin;
+    color: yellow !important;
+    font-size: 2rem;
+    @extend %center-text;
+}
+// Navbar
+
+// Landing Section
+section {
+    height: 100vh;
+    @extend %center-text;
+}
+
+h2 {
+    margin-bottom: $default-margin;
+    font-size: 1.5rem;
+}
+
+#zuitt-motto {
+    margin-bottom: $default-margin;
+	letter-spacing: $default-letter-space;
+}
+
+h3 {
+    margin-bottom: $default-margin;
+    letter-spacing: $default-letter-space * 5;
+    + img {
+        margin-bottom: $default-margin;
+        height: 300px;
+        width: 300px;
+        border-radius: 150px;
+	}
+}
+
+ol {
+    margin-bottom: $default-margin;
+    list-style-type: none;
+}
+
+.offering-item {
+    text-transform: uppercase;
+}
+
+#bootcamp-learning-list {
+	li {
+    	color: #075966;
+	}
+}
+
+a {
+	text-decoration: none;
+}
+
+section {
+	> form {
+	 > label {
+    	color: rgb(0,0,128);
+		}
+	}
+}
+
+@mixin border($b-width: 2px, $b-style: solid) {
+	border-width: $b-width;
+	border-style: $b-style;
+}
+
+form {
+	@include border();
+	text-align: center;
+    background-color: white;
+    border-color: black;
+    height: 220px;
+    width: 25vw;
+    position: relative;
+    left: 37.25%;
+}
+
+input[required] {
+	@include border();
+    border-color: navy;
+    width: 90%;
+}
+
+button {
+    background-color: darksalmon;
+    color: white;
+    border: 0;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px;
+}
