@@ -11,15 +11,15 @@ $default-margin: 20px;
 nav {
     background-color: white;
     margin-bottom: $default-margin;
-}
 
-a:hover {
-    background-color: #b4d6de;
-}
+    a:hover {
+        background-color: #b4d6de;
+    }
 
-div {
-    display: inline-block;
-    float: right;
+    div {
+        display: inline-block;
+        float: right;
+    }
 }
 
 h1 {
@@ -60,10 +60,10 @@ h3 {
 ol {
     margin-bottom: $default-margin;
     list-style-type: none;
-}
 
-.offering-item {
-    text-transform: uppercase;
+    .offering-item {
+        text-transform: uppercase;
+    }
 }
 
 #bootcamp-learning-list {
@@ -98,19 +98,19 @@ form {
     width: 25vw;
     position: relative;
     left: 37.25%;
-}
 
-input[required] {
-	@include border();
-    border-color: navy;
-    width: 90%;
-}
+    input[required] {
+        @include border();
+        border-color: navy;
+        width: 90%;
+    }
 
-button {
-    background-color: darksalmon;
-    color: white;
-    border: 0;
-    border-radius: 15px;
-    padding: 5px;
-    margin: 10px;
+    button { 
+        background-color: darksalmon;
+        color: white;
+        border: 0;
+        border-radius: 15px;
+        padding: 5px;
+        margin: 10px;
+    }
 }

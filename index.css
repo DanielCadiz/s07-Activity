@@ -22,12 +22,10 @@ nav {
   background-color: white;
   margin-bottom: 20px;
 }
-
-a:hover {
+nav a:hover {
   background-color: #b4d6de;
 }
-
-div {
+nav div {
   display: inline-block;
   float: right;
 }
@@ -67,8 +65,7 @@ ol {
   margin-bottom: 20px;
   list-style-type: none;
 }
-
-.offering-item {
+ol .offering-item {
   text-transform: uppercase;
 }
 
@@ -95,15 +92,13 @@ form {
   position: relative;
   left: 37.25%;
 }
-
-input[required] {
+form input[required] {
   border-width: 2px;
   border-style: solid;
   border-color: navy;
   width: 90%;
 }
-
-button {
+form button {
   background-color: darksalmon;
   color: white;
   border: 0;
