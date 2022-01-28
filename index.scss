@@ -84,24 +84,21 @@ section {
 	}
 }
 
-@mixin border($b-width: 2px, $b-style: solid) {
-	border-width: $b-width;
-	border-style: $b-style;
+@mixin borders($border-color: black) {
+	border: 2px solid $border-color;
 }
 
 form {
-	@include border();
+	@include borders();
 	text-align: center;
     background-color: white;
-    border-color: black;
     height: 220px;
     width: 25vw;
     position: relative;
     left: 37.25%;
 
     input[required] {
-        @include border();
-        border-color: navy;
+        @include borders($border-color: navy);
         width: 90%;
     }
 

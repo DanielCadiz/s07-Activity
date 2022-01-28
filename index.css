@@ -82,20 +82,16 @@ section > form > label {
 }
 
 form {
-  border-width: 2px;
-  border-style: solid;
+  border: 2px solid black;
   text-align: center;
   background-color: white;
-  border-color: black;
   height: 220px;
   width: 25vw;
   position: relative;
   left: 37.25%;
 }
 form input[required] {
-  border-width: 2px;
-  border-style: solid;
-  border-color: navy;
+  border: 2px solid navy;
   width: 90%;
 }
 form button {
